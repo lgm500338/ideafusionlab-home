@@ -28,10 +28,10 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;paddi
 .brand svg{width:26px;height:26px}
 .right{display:flex;align-items:center;gap:20px}
 nav a{font-size:15px;color:var(--soft);text-decoration:none;margin-left:18px} nav a:hover{color:var(--ink)}
-.hero{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:40px 0 80px}
-h1{font-family:"Gowun Batang",serif;font-size:clamp(40px,6vw,68px);line-height:1.2;letter-spacing:-.02em}
-.hero p{margin-top:22px;color:var(--soft);font-size:19px;max-width:24em}
-.hero svg{width:100%;max-width:480px;height:auto;justify-self:center;overflow:visible}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:24px 0 56px}
+h1{font-family:"Gowun Batang",serif;font-size:clamp(34px,5.2vw,58px);line-height:1.2;letter-spacing:-.02em}
+.hero p{margin-top:16px;color:var(--soft);font-size:17px;max-width:24em}
+.hero svg{width:100%;max-width:400px;height:auto;justify-self:center;overflow:visible}
 .ic{opacity:0;animation:flip 31.200000000000003s linear infinite both}
 .ic>g{transform-box:fill-box;transform-origin:center;animation:inherit;animation-name:squash}
 @keyframes flip{0%{opacity:0}1.4%{opacity:1}23.6%{opacity:1}25%,100%{opacity:0}}
@@ -39,21 +39,21 @@ h1{font-family:"Gowun Batang",serif;font-size:clamp(40px,6vw,68px);line-height:1
 #spark{transform-box:fill-box;transform-origin:center;animation:glow 2.6s ease-out 1.35s infinite}
 @keyframes glow{0%{transform:scale(1) rotate(0)}15%{transform:scale(1.45) rotate(45deg)}40%,100%{transform:scale(1) rotate(90deg)}}
 
-.feature{background:var(--ink);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.feature{background:var(--ink);color:#fff;border-radius:24px;padding:40px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
 .feature .kicker{color:#FFC83D;font-weight:700;font-size:15px}
-.feature h2{font-family:"Gowun Batang",serif;font-size:clamp(30px,4vw,44px);line-height:1.25;margin:8px 0 16px}
+.feature h2{font-family:"Gowun Batang",serif;font-size:clamp(26px,3.4vw,38px);line-height:1.25;margin:6px 0 12px}
 .feature p{color:#C9CDD8;max-width:30em}
 .feature .cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:28px}
 .feature .go{background:#FFC83D;color:var(--ink)} .feature .go:hover{background:#ffd666}
 .pill{font-size:14px;color:#C9CDD8;border:1px solid #444a5c;border-radius:99px;padding:4px 12px}
-.combo{display:grid;gap:12px;justify-items:center}
+.combo{display:grid;gap:10px;justify-items:center}
 .combo .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
-.chip{background:#2A2F3F;border:1px solid #3a4054;border-radius:14px;padding:12px 20px;font-size:20px;font-weight:500}
+.chip{background:#2A2F3F;border:1px solid #3a4054;border-radius:12px;padding:10px 16px;font-size:18px;font-weight:500}
 .plus{color:#7d8496;font-size:22px}
 .arrow{color:#7d8496;font-size:22px;line-height:1}
 .result{border:2px dashed #FFC83D;color:#FFC83D;border-radius:14px;padding:10px 20px;font-weight:700;font-size:18px}
-.combo .cta{margin-top:18px;justify-content:center}
-section.list{padding:88px 0 24px}
+.combo .cta{margin-top:12px;justify-content:center}
+section.list{padding:64px 0 16px}
 h2.sec{font-family:"Gowun Batang",serif;font-size:32px;line-height:1.3}
 .lead{color:var(--soft);margin:6px 0 32px}
 .group{font-size:15px;font-weight:700;color:var(--soft);margin:36px 0 0;padding-bottom:10px;border-bottom:2px solid var(--ink)}
@@ -88,7 +88,7 @@ h2.sec{font-family:"Gowun Batang",serif;font-size:32px;line-height:1.3}
 @media (max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.card{padding:14px;border-radius:14px}.card .icon{width:46px;height:46px;border-radius:12px}.card .tile{font-size:20px}.card .foot{flex-direction:column;align-items:flex-start;gap:8px}.card strong{font-size:15px}.card .d{font-size:13px}}
 .more{margin-top:24px;color:var(--soft);font-size:15px}
-.about{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;padding:72px 0;border-top:1px solid var(--line);margin-top:64px}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;padding:56px 0;border-top:1px solid var(--line);margin-top:48px}
 .about p+p{margin-top:14px}
 footer{border-top:1px solid var(--line);padding:40px 0 56px;font-size:14px;color:var(--soft)}
 footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12px} footer dt{color:var(--ink);font-weight:500}
@@ -98,9 +98,9 @@ footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12
 .lang button[aria-pressed="true"]{background:#1C1F2A;color:#fff;font-weight:700}
 .lang button:focus-visible{outline:3px solid #3B6CF6;outline-offset:2px}
 @media (max-width:800px){
-  .combo .row{flex-wrap:nowrap;gap:6px} .chip{padding:10px 14px;font-size:17px} .plus{font-size:18px}
-  .hero{grid-template-columns:1fr;padding:8px 0 56px} .hero svg{order:-1;max-width:330px}
-  .feature{grid-template-columns:1fr;padding:36px 24px;border-radius:20px}
+  .combo .row{flex-wrap:nowrap;gap:6px} .chip{padding:8px 12px;font-size:15px} .plus{font-size:16px} .result{font-size:16px;padding:8px 16px}
+  .hero{grid-template-columns:1fr;padding:0 0 36px;gap:16px} .hero svg{order:-1;max-width:260px}
+  .feature{grid-template-columns:1fr;padding:28px 20px;border-radius:18px;gap:22px} .feature p{font-size:15px}
   .about{grid-template-columns:1fr;gap:12px}
   .app{grid-template-columns:56px 1fr;gap:16px} .icon{width:56px;height:56px;border-radius:14px}
   .links{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center;gap:14px}
@@ -217,17 +217,22 @@ footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12
         <span class="d"><span class="ko">물방울 속 바다생물을 같은 종류끼리 모으는 퍼즐</span><span class="en">Sort sea creatures floating in water drops into matching tubes.</span></span>
         <span class="foot"><span class="state"><span class="ko">웹 공개</span><span class="en">Web</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
       </a>
+      <a class="card ko" data-cat="game" href="https://bomb-pass.vercel.app">
+        <img class="icon" src="/icons/bombpass.png" alt="" loading="lazy">
+        <strong>두근두근 폭탄</strong>
+        <span class="d">폰 하나로 돌려가며 즐기는 두근두근 파티 게임 모음</span>
+        <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
     </div>
-    <p class="more"><span class="ko">더 많은 앱과 게임을 준비하고 있어요.</span><span class="en">More games are coming soon.</span></p>
     <p class="pv"><span class="ko">개인정보처리방침</span><span class="en">Privacy policies</span>: <a href="/privacy/aliendots.html"><span class="ko">외계인 닷</span><span class="en">Alien Dots</span></a> · <a href="/privacy/arrowmelody.html">Arrow Melody</a> · <a href="/privacy/oceangarden.html"><span class="ko">오션가든</span><span class="en">Ocean Sort</span></a></p>
   </section>
 
   <section class="about" id="about">
     <h2 class="sec"><span class="ko">소개</span><span class="en">About</span></h2>
     <div>
-      <p class="ko">다음 에디슨은 거창한 연구실이 아니라, 오늘 누군가의 손바닥 위에서 태어날지도 모릅니다.</p>
+      <p class="ko">에디슨은 거창한 연구실이 아니라, 오늘 누군가의 손바닥 위에서 태어날지도 모릅니다.</p>
       <p class="ko">아이디어믹스랩은 사람들이 더 자주 엉뚱한 상상을 하고, 그 상상을 두려워하지 않는 세상을 꿈꿉니다. 우리가 만든 작은 앱 하나가 누군가에게 “나도 해볼 수 있겠다”는 용기가 되기를 바랍니다.</p>
-      <p class="en">The next Edison may not be born in a grand laboratory, but in the palm of someone's hand, today.</p>
+      <p class="en">An Edison may not be born in a grand laboratory, but in the palm of someone's hand, today.</p>
       <p class="en">IdeaFusionLab dreams of a world where people imagine boldly and are never afraid of their wildest ideas. We hope every small app we make gives someone the courage to say, “I can do this too.”</p>
     </div>
   </section>
@@ -240,7 +245,7 @@ footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12
     <dt><span class="ko">대표</span><span class="en">Representative</span></dt><dd><span class="ko">박내연</span><span class="en">PARK NAEYEON</span></dd>
     <dt><span class="ko">이메일</span><span class="en">Email</span></dt><dd><a href="mailto:pny9009@hanmail.net">pny9009@hanmail.net</a></dd>
   </dl>
-  <p style="margin-top:20px">© 2026 IDEAMIXLAB</p>
+  <p style="margin-top:20px"><span class="ko">© 2026 아이디어믹스랩. All rights reserved.</span><span class="en">© 2026 IDEAMIXLAB. All rights reserved.</span></p>
 </div></footer>
 <script>
 (function(){

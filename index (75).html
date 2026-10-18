@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>아이디어믹스랩 IdeaFusionLab</title>
+<meta name="description" content="모든 위대한 발명은 “이걸 섞어 보면 어떨까?”라는 질문에서 시작됐습니다. 아이디어믹스랩.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ideafusionlab.net/">
+<meta property="og:site_name" content="아이디어믹스랩">
+<meta property="og:title" content="아이디어믹스랩">
+<meta property="og:description" content="모든 위대한 발명은 “이걸 섞어 보면 어떨까?”라는 질문에서 시작됐습니다.">
+<meta property="og:image" content="https://ideafusionlab.net/og-image-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2258%2064%2084%2080%22%20aria-hidden%3D%22true%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22fs%22%3E%3Cpath%20d%3D%22M89%2070%20H111%20V90%20L136%20132%20Q139%20140%20131%20140%20H69%20Q61%20140%2064%20132%20L89%2090%20Z%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20clip-path%3D%22url%28%23fs%29%22%3E%3Crect%20x%3D%220%22%20y%3D%22104%22%20width%3D%22200%22%20height%3D%2240%22%20fill%3D%22%232B3A67%22/%3E%3Cpath%20d%3D%22M100%2C110%20Q103%2C118%20111%2C121%20Q103%2C124%20100%2C132%20Q97%2C124%2089%2C121%20Q97%2C118%20100%2C110Z%22%20fill%3D%22%23FFC83D%22/%3E%3C/g%3E%3Cpath%20d%3D%22M89%2070%20H111%20V90%20L136%20132%20Q139%20140%20131%20140%20H69%20Q61%20140%2064%20132%20L89%2090%20Z%22%20fill%3D%22none%22%20stroke%3D%22%231C1F2A%22%20stroke-width%3D%226%22%20stroke-linejoin%3D%22round%22/%3E%3Cline%20x1%3D%2284%22%20y1%3D%2270%22%20x2%3D%22116%22%20y2%3D%2270%22%20stroke%3D%22%231C1F2A%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F7F8FA;--ink:#1C1F2A;--soft:#5A6070;--line:#DADDE4}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.7 "IBM Plex Sans KR",system-ui,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit} a:focus-visible{outline:3px solid #3B6CF6;outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:24px;padding-bottom:24px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;text-decoration:none}
+.brand svg{width:26px;height:26px}
+.right{display:flex;align-items:center;gap:20px}
+nav a{font-size:15px;color:var(--soft);text-decoration:none;margin-left:18px} nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:24px 0 56px}
+h1{font-family:"Gowun Batang",serif;font-size:clamp(34px,5.2vw,58px);line-height:1.2;letter-spacing:-.02em}
+.hero p{margin-top:16px;color:var(--soft);font-size:17px;max-width:24em}
+.hero svg{width:100%;max-width:400px;height:auto;justify-self:center;overflow:visible}
+.ic{opacity:0;animation:flip 31.200000000000003s linear infinite both}
+.ic>g{transform-box:fill-box;transform-origin:center;animation:inherit;animation-name:squash}
+@keyframes flip{0%{opacity:0}1.4%{opacity:1}23.6%{opacity:1}25%,100%{opacity:0}}
+@keyframes squash{0%{transform:scaleX(0)}1.4%{transform:scaleX(1)}23.6%{transform:scaleX(1)}25%,100%{transform:scaleX(0)}}
+#spark{transform-box:fill-box;transform-origin:center;animation:glow 2.6s ease-out 1.35s infinite}
+@keyframes glow{0%{transform:scale(1) rotate(0)}15%{transform:scale(1.45) rotate(45deg)}40%,100%{transform:scale(1) rotate(90deg)}}
+
+.feature{background:var(--ink);color:#fff;border-radius:24px;padding:40px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+.feature .kicker{color:#FFC83D;font-weight:700;font-size:15px}
+.feature h2{font-family:"Gowun Batang",serif;font-size:clamp(26px,3.4vw,38px);line-height:1.25;margin:6px 0 12px}
+.feature p{color:#C9CDD8;max-width:30em}
+.feature .cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:28px}
+.feature .go{background:#FFC83D;color:var(--ink)} .feature .go:hover{background:#ffd666}
+.pill{font-size:14px;color:#C9CDD8;border:1px solid #444a5c;border-radius:99px;padding:4px 12px}
+.combo{display:grid;gap:10px;justify-items:center}
+.combo .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.chip{background:#2A2F3F;border:1px solid #3a4054;border-radius:12px;padding:10px 16px;font-size:18px;font-weight:500}
+.plus{color:#7d8496;font-size:22px}
+.arrow{color:#7d8496;font-size:22px;line-height:1}
+.result{border:2px dashed #FFC83D;color:#FFC83D;border-radius:14px;padding:10px 20px;font-weight:700;font-size:18px}
+.combo .cta{margin-top:12px;justify-content:center}
+section.list{padding:64px 0 16px}
+h2.sec{font-family:"Gowun Batang",serif;font-size:32px;line-height:1.3}
+.lead{color:var(--soft);margin:6px 0 32px}
+.group{font-size:15px;font-weight:700;color:var(--soft);margin:36px 0 0;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.app{display:grid;grid-template-columns:72px 1fr auto;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
+.icon{width:72px;height:72px;border-radius:18px;object-fit:cover;display:block}
+.tile{display:grid;place-items:center;color:#fff;font-weight:700;font-size:28px}
+.app h3{font-size:20px} .app p{color:var(--soft);font-size:16px;margin-top:2px}
+.state{display:inline-block;margin-top:8px;font-size:13px;font-weight:500;padding:2px 10px;border-radius:99px;background:#E9EDF3;color:var(--soft)}
+.links{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:15px}
+.go{font-weight:700;text-decoration:none;background:var(--ink);color:#fff;padding:10px 18px;border-radius:10px;white-space:nowrap}
+.go:hover{background:#353a4a}
+.sub{color:var(--soft)}
+[data-lang="en"] section.list{padding-top:16px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:-8px 0 24px}
+.tabs button{border:1px solid var(--line);background:#fff;font:inherit;font-size:15px;padding:7px 18px;border-radius:99px;color:var(--soft);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:700}
+.tabs button:focus-visible{outline:3px solid #3B6CF6;outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{display:flex;flex-direction:column;gap:6px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(28,31,42,.08)}
+.card:focus-visible{outline:3px solid #3B6CF6;outline-offset:3px}
+.card .icon{width:56px;height:56px;border-radius:14px;margin-bottom:6px;object-fit:cover;box-shadow:0 0 0 1px rgba(28,31,42,.08)}
+.card .tile{font-size:24px}
+.card strong{font-size:17px;line-height:1.35}
+.card .d{font-size:14px;line-height:1.5;color:var(--soft);flex:1}
+.card .foot{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap}
+.card .state{margin:0}
+.card .play{font-size:13px;font-weight:700;white-space:nowrap}
+.card[hidden]{display:none!important}
+.pv{margin-top:12px;font-size:14px;color:var(--soft)}
+.pv a{color:var(--soft)}
+@media (max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.card{padding:14px;border-radius:14px}.card .icon{width:46px;height:46px;border-radius:12px}.card .tile{font-size:20px}.card .foot{flex-direction:column;align-items:flex-start;gap:8px}.card strong{font-size:15px}.card .d{font-size:13px}}
+.more{margin-top:24px;color:var(--soft);font-size:15px}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;padding:56px 0;border-top:1px solid var(--line);margin-top:48px}
+.about p+p{margin-top:14px}
+footer{border-top:1px solid var(--line);padding:40px 0 56px;font-size:14px;color:var(--soft)}
+footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12px} footer dt{color:var(--ink);font-weight:500}
+[data-lang="en"] .ko,[data-lang="ko"] .en,html:not([data-lang]) .en{display:none!important}
+.lang{display:inline-flex;background:#E6E9EF;border-radius:99px;padding:3px}
+.lang button{border:0;background:none;font:inherit;font-size:14px;padding:4px 12px;border-radius:99px;color:#5A6070;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#1C1F2A;color:#fff;font-weight:700}
+.lang button:focus-visible{outline:3px solid #3B6CF6;outline-offset:2px}
+@media (max-width:800px){
+  .combo .row{flex-wrap:nowrap;gap:6px} .chip{padding:8px 12px;font-size:15px} .plus{font-size:16px} .result{font-size:16px;padding:8px 16px}
+  .hero{grid-template-columns:1fr;padding:0 0 36px;gap:16px} .hero svg{order:-1;max-width:260px}
+  .feature{grid-template-columns:1fr;padding:28px 20px;border-radius:18px;gap:22px} .feature p{font-size:15px}
+  .about{grid-template-columns:1fr;gap:12px}
+  .app{grid-template-columns:56px 1fr;gap:16px} .icon{width:56px;height:56px;border-radius:14px}
+  .links{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center;gap:14px}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/"><svg viewBox="58 64 84 80" aria-hidden="true"><defs><clipPath id="fs"><path d="M89 70 H111 V90 L136 132 Q139 140 131 140 H69 Q61 140 64 132 L89 90 Z"/></clipPath></defs><g clip-path="url(#fs)"><rect x="0" y="104" width="200" height="40" fill="#2B3A67"/><path d="M100,110 Q103,118 111,121 Q103,124 100,132 Q97,124 89,121 Q97,118 100,110Z" fill="#FFC83D"/></g><path d="M89 70 H111 V90 L136 132 Q139 140 131 140 H69 Q61 140 64 132 L89 90 Z" fill="none" stroke="#1C1F2A" stroke-width="6" stroke-linejoin="round"/><line x1="84" y1="70" x2="116" y2="70" stroke="#1C1F2A" stroke-width="6" stroke-linecap="round"/></svg><span class="ko">아이디어믹스랩</span><span class="en">IdeaFusionLab</span></a>
+  <div class="right">
+    <nav><a href="#apps"><span class="ko">앱</span><span class="en">Games</span></a><a href="#about"><span class="ko">소개</span><span class="en">About</span></a><a href="#contact"><span class="ko">문의</span><span class="en">Contact</span></a></nav>
+    <div class="lang" role="group" aria-label="Language"><button data-l="ko" aria-pressed="true">한국어</button><button data-l="en" aria-pressed="false">English</button></div>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1><span class="ko">아이디어믹스랩</span><span class="en">IdeaFusionLab</span></h1>
+      <p><span class="ko">모든 위대한 발명은<br>“이걸 섞어 보면 어떨까?”라는<br>질문에서 시작됐습니다.</span><span class="en">Every great invention began with one question:<br>“What if we mixed these?”</span></p>
+    </div>
+    <svg viewBox="0 0 200 150" role="img" aria-label="서로 다른 물건 세 개가 플라스크로 모여 아이디어가 되는 그림">
+<defs><clipPath id="fl"><path d="M89 70 H111 V90 L136 132 Q139 140 131 140 H69 Q61 140 64 132 L89 90 Z"/></clipPath></defs>
+<g stroke="#1C1F2A" stroke-width="1.6" stroke-dasharray="3 4" opacity=".3" fill="none"><path d="M58 68 Q80 70 96 72"/><path d="M142 68 Q120 70 104 72"/><path d="M100 48 L100 68"/></g>
+<g transform="translate(38 60)"><circle r="24" fill="#3B6CF6"/><g class="ic" style="animation-delay:0.0s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="-11" y="-16" width="22" height="32" rx="2"/><rect x="-7" y="-12" width="5" height="5"/><rect x="2" y="-12" width="5" height="5"/><rect x="-7" y="-4" width="5" height="5"/><rect x="2" y="-4" width="5" height="5"/><line x1="-6" y1="9" x2="6" y2="9"/></g></g></g><g class="ic" style="animation-delay:-23.4s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="-14" y="-8" width="28" height="19" rx="3"/><circle cx="0" cy="2" r="6"/><path d="M-6 -8 L-4 -12 H4 L6 -8"/></g></g></g><g class="ic" style="animation-delay:-15.6s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="-11" y="-15" width="22" height="30" rx="3"/><rect x="-7" y="-11" width="14" height="6"/><g fill="#fff" stroke="none"><circle cx="-5" cy="2" r="1.4"/><circle cx="0" cy="2" r="1.4"/><circle cx="5" cy="2" r="1.4"/><circle cx="-5" cy="8" r="1.4"/><circle cx="0" cy="8" r="1.4"/><circle cx="5" cy="8" r="1.4"/></g></g></g></g><g class="ic" style="animation-delay:-7.8s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 -8 Q-8 -13 -15 -10 V10 Q-8 7 0 12 Q8 7 15 10 V-10 Q8 -13 0 -8Z"/><line x1="0" y1="-8" x2="0" y2="12"/></g></g></g></g><g transform="translate(162 60)"><circle r="24" fill="#FF8A1F"/><g class="ic" style="animation-delay:-2.6s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="-6" y="-3" width="12" height="7" rx="2" fill="#fff"/><line x1="-6" y1="-2" x2="-13" y2="-8"/><line x1="6" y1="-2" x2="13" y2="-8"/><line x1="-6" y1="3" x2="-13" y2="9"/><line x1="6" y1="3" x2="13" y2="9"/><ellipse cx="-13" cy="-10" rx="6" ry="2"/><ellipse cx="13" cy="-10" rx="6" ry="2"/><ellipse cx="-13" cy="11" rx="6" ry="2"/><ellipse cx="13" cy="11" rx="6" ry="2"/></g></g></g><g class="ic" style="animation-delay:-26.0s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-15 0 Q-15 -14 0 -14 Q15 -14 15 0 Q11 -3 7.5 0 Q4 -3 0 0 Q-4 -3 -7.5 0 Q-11 -3 -15 0Z"/><path d="M0 0 V11 Q0 15 -4 13"/></g></g></g><g class="ic" style="animation-delay:-18.2s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 -16 Q8 -8 7 6 H-7 Q-8 -8 0 -16Z"/><circle cx="0" cy="-5" r="3"/><path d="M-7 1 L-12 9 L-7 7"/><path d="M7 1 L12 9 L7 7"/><path d="M-3 9 L0 15 L3 9"/></g></g></g><g class="ic" style="animation-delay:-10.4s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-11 -5 H7 V5 Q7 12 -2 12 Q-11 12 -11 5Z"/><path d="M7 -1 Q14 -1 14 3 Q14 8 7 7"/><path d="M-6 -9 Q-4 -12 -6 -15"/><path d="M0 -9 Q2 -12 0 -15"/></g></g></g></g><g transform="translate(100 24)"><circle r="22" fill="#22B573"/><g class="ic" style="animation-delay:-5.2s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"><circle cx="-8" cy="2" r="7"/><circle cx="8" cy="2" r="7"/><path d="M-2 1 Q0 -2 2 1"/><line x1="-15" y1="0" x2="-18" y2="-5"/><line x1="15" y1="0" x2="18" y2="-5"/></g></g></g><g class="ic" style="animation-delay:-28.6s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle r="15"/><line x1="0" y1="-13" x2="0" y2="-10"/><line x1="13" y1="0" x2="10" y2="0"/><line x1="0" y1="13" x2="0" y2="10"/><line x1="-13" y1="0" x2="-10" y2="0"/><line x1="0" y1="0" x2="0" y2="-8"/><line x1="0" y1="0" x2="6" y2="3"/></g></g></g><g class="ic" style="animation-delay:-20.8s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-12 5 A12 12 0 0 1 12 5"/><rect x="-15" y="2" width="6" height="11" rx="2"/><rect x="9" y="2" width="6" height="11" rx="2"/></g></g></g><g class="ic" style="animation-delay:-13.0s"><g><g fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-15 0 L15 -11 L5 13 L0 3Z"/><line x1="0" y1="3" x2="15" y2="-11"/></g></g></g></g>
+<g clip-path="url(#fl)"><rect x="0" y="104" width="200" height="40" fill="#2B3A67"/>
+<circle cx="82" cy="132" r="2.4" fill="#3B6CF6"/><circle cx="118" cy="129" r="2.8" fill="#FF8A1F"/><circle cx="104" cy="137" r="2" fill="#22B573"/>
+<path id="spark" d="M100,110 Q103,118 111,121 Q103,124 100,132 Q97,124 89,121 Q97,118 100,110Z" fill="#FFC83D"/></g>
+<path d="M89 70 H111 V90 L136 132 Q139 140 131 140 H69 Q61 140 64 132 L89 90 Z" fill="none" stroke="#1C1F2A" stroke-width="5" stroke-linejoin="round"/>
+<line x1="84" y1="70" x2="116" y2="70" stroke="#1C1F2A" stroke-width="5" stroke-linecap="round"/>
+<circle r="3" fill="#3B6CF6" opacity="0">
+<animateMotion path="M58 68 Q80 70 96 72" dur="7.800000000000001s" begin="8.25s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.115;1" calcMode="linear"/>
+<animate attributeName="opacity" values="0.95;0.95;0;0" keyTimes="0;0.11;0.12;1" dur="7.800000000000001s" begin="8.25s" repeatCount="indefinite"/></circle><circle r="3" fill="#FF8A1F" opacity="0">
+<animateMotion path="M142 68 Q120 70 104 72" dur="7.800000000000001s" begin="5.65s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.115;1" calcMode="linear"/>
+<animate attributeName="opacity" values="0.95;0.95;0;0" keyTimes="0;0.11;0.12;1" dur="7.800000000000001s" begin="5.65s" repeatCount="indefinite"/></circle><circle r="3" fill="#22B573" opacity="0">
+<animateMotion path="M100 48 L100 68" dur="7.800000000000001s" begin="3.05s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.115;1" calcMode="linear"/>
+<animate attributeName="opacity" values="0.95;0.95;0;0" keyTimes="0;0.11;0.12;1" dur="7.800000000000001s" begin="3.05s" repeatCount="indefinite"/></circle>
+</svg>
+  </div>
+
+  <div class="feature ko">
+    <div>
+      <div class="kicker">아이디어믹스랩의 시작</div>
+      <h2>아이디어 믹스랩</h2>
+      <p>단어 몇 개를 섞으면 생각지도 못한 아이디어가 나와요. 20년 동안 품어 온 생각을 1년 넘게 다듬어 만든, 아이디어믹스랩이라는 이름이 시작된 앱입니다.</p>
+    </div>
+    <div class="combo">
+      <div class="row" aria-hidden="true"><span class="chip">4D</span><span class="plus">+</span><span class="chip">전자계산기</span><span class="plus">+</span><span class="chip">드론</span></div>
+      <div class="arrow" aria-hidden="true">↓</div>
+      <div class="result" aria-hidden="true">💡 새로운 아이디어</div>
+      <div class="cta"><a class="go" href="https://mix.ideafusionlab.net">바로 해보기</a><span class="pill">토스에서 이용 가능</span></div>
+    </div>
+  </div>
+
+  <section class="list" id="apps">
+    <h2 class="sec"><span class="ko">만든 앱</span><span class="en">Our apps</span></h2>
+    <p class="lead"><span class="ko">당신의 즐겁고 여유 있는 생활과 함께합니다.</span><span class="en">Here for a joyful, unhurried everyday life.</span></p>
+    <div class="tabs ko" role="group" aria-label="앱 분류">
+      <button data-f="all" aria-pressed="true">전체</button><button data-f="life" aria-pressed="false">일상</button><button data-f="learn" aria-pressed="false">배움</button><button data-f="game" aria-pressed="false">게임</button>
+    </div>
+    <div class="grid">
+      <a class="card ko" data-cat="life" href="https://lifestock-vert.vercel.app">
+        <img class="icon" src="/icons/lifestock.png" alt="" loading="lazy">
+        <strong>라이프스탁</strong>
+        <span class="d">하루 습관을 주식 차트처럼 기록하고 내 성장을 확인해요</span>
+        <span class="foot"><span class="state">토스</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="life" href="https://atelier-zen-nine.vercel.app">
+        <img class="icon" src="/icons/atelier.png" alt="" loading="lazy">
+        <strong>멍때리는 아틀리에</strong>
+        <span class="d">어반스케치를 감상하고 색칠하며 잠시 쉬어가요</span>
+        <span class="foot"><span class="state">토스</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="life" href="https://fortune-and-roulette.vercel.app">
+        <img class="icon" src="/icons/fortune.png" alt="" loading="lazy">
+        <strong>포춘앤룰렛</strong>
+        <span class="d">고민될 때 돌리는 룰렛과 재미로 보는 전생 운세</span>
+        <span class="foot"><span class="state">토스</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="life" href="https://body-sign.vercel.app">
+        <img class="icon" src="/icons/bodysign.png" alt="" loading="lazy">
+        <strong>바디시그널</strong>
+        <span class="d">몸이 보내는 신호를 나이대별로 살펴봐요. 의료 진단을 대신하지 않아요</span>
+        <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card" data-cat="life" href="https://wants-navy.vercel.app">
+        <img class="icon ko" src="/icons/wants.png" alt="" loading="lazy"><img class="icon en" src="/icons/wants-en.png" alt="" loading="lazy">
+        <strong><span class="ko">원하는것</span><span class="en">What I Want</span></strong>
+        <span class="d"><span class="ko">오늘, 내일, 일 년, 평생… 시간마다 지금 내가 원하는 것을 적는 마음 다이어리</span><span class="en">Not what you’ll achieve. What you want, right now: today, this year, for a lifetime.</span></span>
+        <span class="foot"><span class="state"><span class="ko">웹 공개</span><span class="en">Web</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Try now</span> →</span></span>
+      </a>
+      <a class="card" data-cat="life" href="https://gureummeong.vercel.app">
+        <img class="icon" src="data:image/webp;base64,UklGRnwTAABXRUJQVlA4IHATAABwawCdASoAAQABPj0ci0QiIaEU21SsIAPEsrdwIn+A9N/ANqW3zdf9qL+j6+Wx/2/+zBfMnR/y5bDav+qfvPyu8bPZv6r8WfJzj6dlftfMw5S8rXqW8wP9XfPA9j37o+pzzc/SP/gPUA/uvU6ehf5dXtB+Uzqj3ALQeNfan/MvzzkQ5cYIO+LQBXYTr/+15e/rwX9FRysVBLCdkSwnZEsGzLCDyVnC6qEju5VfeX8/ezVozY77uk3gsVB6vL33Mcldds60lBkFRDs82iTB1bmWBlwGyekYttFe3p21R30CYP5nRmy5+IY+rJ0wFhsmX/rtyoIi8FQkR83SiZ22Eq4lZmL3l/p88ofQNnN79X7HImsGteXPti+tiDbw6clyTZTdt15X8EMryBSYgYTce3u1YN56fQY2DfP9qBihJ6aQuqSHEydkO0Fa4ULCHKvWcLTxFgmu2cJHbqq1bZleb3zCvT8oQgX9O0A7T/OuNR/DnYKQFiIF9zdiAxSvNrcD7cr99TPj0vrT2CiP8rGIIgGcCvZeYPU2mlMIKqq/ZES0FRfb0wDrEJ8B6PbpyCzik03ExjG/rAdI62Ue9z/ely76yF0h/sNO2OK4y64JZovdMnfGIYwrM46WYnkdM5zWDDStd6H7bogENa2XwocMmMdu46DWns1dYdkQ714HW3BWNjP6P2BKCPxA39+q6Id/a4+LT6gA07Hvtw91RS8i0Bij7D5/LVHJHRXAiiIdkXe+qILIxDtlnlBUNy1txiMCSH4zDUULtAo4Ety1rjjobqtTFFPLBzgB/ScWmjdZ8DjUs/s8u54d2/vrh475kdF2yvtRGOuogLnGHe0pu0N1ZgmII//LkkRqHGfJ/twiSlcWyxBOmJ/bRjkoZko9Fq3y6EQ7hSpT9ynLixH0Ulcsoc4NyMt99WC9D++BE+DIZyBleJ3MFs0j1Mg4GdBF8dkXHB2FshJttpTVgSRh7Rczqksnq7T4piz76glF1fEkCBjThyhcdXcE75aXjkmx/LuAq4A4ZRudtBPmV6/OcGaUonrdP4ASAAD3cbIINYT5Vj2+f/URMxT62V0VboS/jR5mWvbSblZsntX5/5KIh8iETkHSH5vw8Me7CSm5YgWRpciWW79ugT5z8A8dp8CIeEUcMK+XtGY8AP7wQTdFY7y//1V7+Ve/lXuYp//zUHpJ09ozUYDYEazw+F1nh8LrPGhjsshkXPTo1CRm/+hJRrcYQOjbRhWXF3rOO8RkAdlJ8Gr4yUSnA8nCk75AAH8qnns2ZuRNrLnmnPbCrmVaJCnOL7YPziyRVf+A3+omC31YFoN6EqEYbOAsKFqjBAhtnYCGQfsmREgHUb2+DiRSO9i29u7g019QNZXkyRX+Uga8KjDUWXQ/t2AF+DxKNjoHhWqfZHJouzOw2BWGvEfUZzNxBWa8Ecnf83jO/aRhcNx0/eKNUxZuWEIYaF+IdgU/BSk55C3w7SSgN5ZFivIrXrHmG5APiQ2UXB79FO7UFFL7B9QzEl39r8zbgi2kTsacSEZiRnlEcFkX2bGF39QIQ0XPA9J6MT8vH9qEmkmjqz31cavBMY2urGY5Weldl/guQwk17b6/NiIb+r4GxJgdWxVuM90RNO5FdCz3dRRyLV3d2wev79/4m5O8OSVCvHhLgL56NoS/nD0vDHVWru81RKBpPodzUFscVv7P3RfX745vzEo8NISeCH9K9Wet53QLwIE/IqsggpZAUuNiXLmycx0/Rjm5u67/FMotbU2QECM6RuIvAGM8BZlTtlDdIzUdQBI/s0lzh+wAx4Gf8iMdodRcnBa6wJiNijk7hmJWPjwCLZ/+T4QmKLR1YkO7fijn3BDE3Xs9wd/9F+Q8jgiaL03opA0omVvQ4NXlxBxSdM5G0T7Fj2Z9cvO4aL5rSfj3+ZLPvnzzL1C8Tp/r/RCGMMlD0zdgY/YgboJ+JG2G4lHrTv914zNQNjxUo+nAedTqOfDEKWo2AJ2yYhAdvMKGLmu5uV7mZzMJpxMVWF3utauSC/joBhR46+kl1pre24o6uZedjxjRKBX9uA+mBBK8bKctzKud+CuZ7JXTEU0vqwKAjiVJrWRt+ZgPn+x+FkEmc1Al6uwPkwNvB2c7qN3lrY/me5yW3J4PsSioS3AzVcy6OkBDm00iMUJqMdmugCiWIKOkJzO/y7Kdv5f7Abp5wimHeDks47veUytDMb504v55gzfF4548gx0E8JlSbzaS9JTHp2xMqBYYL7By0xQXqZ8K3IB9bXYXlB4RFsfmjW4FTrSU5huacA7yl9up2HG+OFvv6s5gQ2eS7qaOKyXy2MqbvIt3qnNU/bAClvYrn2eFaWAllfTynb1CU/1p2B1eLweD5ORo2xPVlLtGPpCqFrONDaUXgHMfglk17kF48HqxYzQ8YSGkpEs4WGcRn25ufKnkqCXMVNmP2Xt6ebnqYQUQxOTIDJW2R3i8uD2QMUsUQ618bNqZWeE2fjYoBJGIn1xyUrvwU79Gyx7ICOFN4lrfiGGEXwBObJYATTVsaSX46ZPCSnrO84jvTqK5gV4XoHwKcKMNI47e5dDGlYaOyqMOhpSAkvzxiyE7lr5wgc6foZ6oJpkTulPDWYrC0vHxoRfdbfRI6uMCxdqVpNQ1lx5htgLOVgK7BbcUnXlgXNm5/MoJMJweWSUyAoHNbT210ifUiPT6Rqa8ujt5/V5KkGmMjqGQ6+LIG69/m9VeQrtZY43j+9jmGm3Un/hN/VpZQiUko4a9eau4fAVe2IbmPj9usADLK0+JET/ZUjKg9q79RzsRP7eY7t4o9InA7hZ5BESMJtd5NnaDvudLGdgynshRRpHBS1kalzb+/8j9quax2NzYrBlBW2oD56IIxj/V+O6xmKvmdvPSfZY4tlOp3xCLB9xTiiPorieGHkrqfWd5QEJ5hiG/e6m/79NAMAYRsAI1WRv6UjFUSzUXdh86+ShTxMn7IyaLW8AxnDF+fkxfbmR79Eik9W8RJ8XuhgtJD4CWdk3UUeasZJ2ezTEo1YO6qhVB3Zr95DdKADs7GSgU8lGk/b031OnQKMW6uBP5Y/h3HdyO/uSIgrCKN1UDxAjPF0blqpBEmvmGlG4mCUCpprLbl2HWsCeI9ZyJQ4pcrCyIQoXrJx1uaqHlNdFL8ZzrUES5/94nakDyLjVdH38G+jcj338A9HSzctkLZnoYiH2SZJcQ9mWFeF6c5C/+RioM3sVRWHNbjoljz+FJzTGe8cKQf+8XiWishp6b4PFqHcMw+B4RFB5ZtVv6LL4xpJ0u1Orx0PksLL9tNOhFow3Cje5E6m5Tvyg05NZnK9DqfKSCisVT0et56L/+QUOfZ7cCpPn/ALhl1LUQ22j7/oOw6H15Tij3xKNbiO+1lLQeCCSnL+VD8vK9xOLsOTSn5lxwPM3aAe9gqRU2Mce+LhEcziZ1xMLsShhSLqqtWYypFG7BrbVmYkUUdmHRtt2/yFR2U5HFZ1KIOcIkOL3gBjdKNBfmJVsiWkhpgTcl7XZzjsbd6FBanCt7+Fvv+d0bA0oY2OraGpkrrsADx8dyvBJXkNbC4ZxpQZwpOCeoBMwQiE10gUxWqkmgkJe/zAMnA0tsHMNJppouykdoEEkvZfp9IpB86LAakxT5a0w8FDZ7AiFYA/VzEV6DG3wzaKK6EJeqYw/CpNT5WnTh4pDeDs1aa1kAo7Gx2i0QczlRO6oHUqB6CpBpnd0l47HpvZDvSdKKr+DL8VrrkX3dOVcVyJSjQG95EKgEgljGP3a3zA5Gd85aF/mciJ2MW+kK1dQoMiD3r5jNKX5V6fg29fOmGeTxPxVb5QDCnXkZxnOKpnebLXCS3A/BirsNsApcRRPdeoZ1PUTWvknlEGpfzheQYrDjZej2KjcnK2ESC1aHNzEl33OWlp3AGBGEtTooz8Wq602ryABeNpY0nkTlMuIQLmizTlH2FAPbDhhvfvGUOsEoZ36+6pqWYksdlx9xaHldn55SftQFjHHlTuZTJWKVTENvBr+wm3UIrmweOz4P2yBWkiMDXtWSW/URntpRym8tolC0h/3t5j6wvnkqctvgx1SMosdyeAXc2HCf8q/dC1ItE3lrHQmMyMpU7VKAseFQvWGRNu2f5vwjx9+6bg5o4uOPfBZmAbsEpMvd5kuvjdesm/I2v7PSbdvbxbZwjPAqUqV+C4ew/5ltrCRMzVWoazvUjIJy/FMwH0n/iTYQZJuSO1xTcQaLjgV6vcYkyXqmQRuiuW2MxCQcZDmwuVNALZsmWNfEfs1lox2sGkGo+x9y33yGTVLtS4WsAVt0v6ETC53tkACAN4LjKf4z9hm8+s13cOlnS9Vww9jmOkKP5wThI92WFnsbyxdGBqgKT2m2cJTR6EbwAm/cPOc7d3/htN3uIords/8H/eSvfmxGwnj+NLjfifoKzAGmGyU/edrWrhHvfZTxvfrfC0LsUFPrzILGB6dXzsuqPKJaIyw/dz6gz+BVOoSFWJa2xQKksuEb/DFVZwzKlxeU3qgSeZxRTOs6Gt57X9FTj+oPnWETitqn22zprUiKftw1DSBTw1IVGZjfe2tJ098Rx23XnCzha4FvxAsl6Rl2mptmlWK+9Hs0XLNx0M/vLkJv4Mkt0vv40t8/I6HmG/D/YUScKu2nZPj0gqpYJb9tY/h6eLDv+8PGTTYF7c6pPjaGKwCoWq8q1T+dW6C96ZN1wPOKGr2McnmitWUMLMZsvgo3F1k2h7Me6lioxYHkENH57ijl0DeGtXmRsKwUnJ7FrkT1XRQP/Rj9pZG8i8HPORhMvd2Fr/SOX8aOdeVCGe6PbWWeUGMnqZWFRBYX9/SlDbmfqAvxyPrn6SM8D3V/BZCX93SThF8OF7CEuGCQU1dH7zjd1R7e8rxE/1LU9Ie93tUcw6fAs2zI1DYnLjA5O53HirBZk9ViJaNQKYsNU4amocQ3SPQ1QA85ZIgriFnvEEthi4Sxt+ZRtiQhX74ArJ4VCO+4OmexNFoL5DOk0Q6tROJYJ7KtBxo+TME2m490UgH80hG10zdYvRa8ndLCDFuMii4GDBpSkCguSLcWguU7VzibVH4F9Iu6r/VUyZOtIiziZ9/F5TmhasLJSSGu1hUALsB/PJAOMI1nZ0tWavyDS22TLJSlB+sN/VgsciCaGXUS8FQDb+Ct5H1alYV+th6ept29QTKrC2WNQGHUbnGhCW83IAybUJhGh9YIbaJmlBoaBDbFoJqlkMZTMyzXcS+UxJ7LbU4pRD/8ZrjGdqXbHp2G7E1X69rXUEAkGh98mK2N5S1bjFh+JhVsHu8Q/yNjZzamQ0MnAXQtb5Z59nZYZ5tTY8a3yr5ZDNI/ys+hnCnG4o1MqjaiCvmX/ug6vkiB+QuoFY6c2qdb4aplhlEY+SO3tlsNGz8lJGRUow+/wS9seggA6QKaKM4MAqv0XFbl/zKnPHAMzOruOuwZERvFKvFPUDZRLKg5i2PQPnD+Tnqy0HO9i50j+J8FcG++DKSpeSkV/xCgRgAirJuajO0djhvV1ytP+NQbgKXRG0PW3J2O6u9Wc1FA0RN168wtuWpG6DgPeMjzu29raDJW9ZnfDCpF34i/XSQAeUFkng47JC1H1SHVr2BFaf/vSzRtwi153WprqLKfLxvDkhJ3u6DNuJ9hYxYtkpDJIRim1SJpISV/B4Gop5TYj86OEMlYfzdO8PwkCxKsOq5EdGLGIoOdeLFEjFeW48baWw+MP4/cqMAG19SBpJ8H6a2RlhpVBEexbfizjWnc01GAjnNmnBM8cwRf4+nh1aVZkZeP9tLs/QYq6JDlcJxdLsBBfZtb47BQSIqB/ceLmnEgynzTaBJqyfTgUbw0sKtijbLdwC8kQQDLlhYMh+P8AVWsHYeKca6Wck7+Gwc+18POjUh70sZA4sHIh2yLatNGrN0cRhulyn4sgxOq6kKSCKxn7gpj2t161OyS1iaflxyI35l396LSjVR/UrRlK4dluNCS6/TDbynNqSFUlz47OtxyD2dRdv1LN6DnxTv5Q+qyIHsTqr12MLjdZvSoPGgAdxBpo9N0ruArlpLQJF79mc//CVZ8SFJekleqzn012XM0bIVjQOfon2hwmAGdo69JNfgPKw03NAKbzmtTkwS40/5QRDiVVAv1OFQVwCaUbz0nPz7/x3t/s8ajeRhH8u2jgphU+EAc347nKhZHqLSIHtmeW8aN1rlu1NuLDB4ei0f+IjcqbhNnwxgqhzjdvyotlm6N/hRW31Iu2mJURKXnYduuQ0HmjF1VwCcmqpw8iIsoilmhPlTJTNqFgboPPtPdq4n5oOft/Ur/VewCC8yVfO950nsK4VdgmXJIbU4mN/ZjoCHMI+exsBexodSquzeWAdorqDOuBKFvgJ0hOXFPz1qv9EOpz/DNyjVjVOUzZFXFU3jTvZHy3Dj0avwBIKo4l9e1ymIFpncNJsW+pVhSBMjfCWBgdtqejs06UdOPV6lptMF24knc/J8PXSbhyXL1s5T/O3OgXFFeYYaRSL5Ae+otejl9i41vX0qjnboowRGhcVJLvSvM6ZFigsr1YmlJpznIaZgiVCUUSHOkbKVbprSggE5/5dU8B75xMGfz53FgIrw4eXbAEdX/6c8vhe5I+zKkiWzIll2hAn9fVxdS587gAA==" alt="" loading="lazy">
+        <strong><span class="ko">구름멍</span><span class="en">Gureummeong</span></strong>
+        <span class="d"><span class="ko">세계 곳곳의 지금 하늘을 가만히 올려다봐요</span><span class="en">Look up, quietly, at skies around the world right now.</span></span>
+        <span class="foot"><span class="state"><span class="ko">웹 공개</span><span class="en">Web</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Try now</span> →</span></span>
+      </a>
+      <a class="card" data-cat="life" href="https://mulmeong-ochre.vercel.app">
+        <img class="icon" src="data:image/webp;base64,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" alt="" loading="lazy">
+        <strong><span class="ko">물멍</span><span class="en">Mulmeong</span></strong>
+        <span class="d"><span class="ko">비, 호수, 바다, 폭포… 물소리와 함께 멍하니 쉬어가요</span><span class="en">Rain, lakes, sea and falls. Rest a while with the sound of water.</span></span>
+        <span class="foot"><span class="state"><span class="ko">웹 공개</span><span class="en">Web</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Try now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="learn" href="https://solar-system-explorer-wheat.vercel.app">
+        <img class="icon" src="/icons/woojuro.png" alt="" loading="lazy">
+        <strong>우주로</strong>
+        <span class="d">태양계를 3D로 날아다니며 행성을 탐험해요</span>
+        <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="learn" href="https://movie-chronicle-five.vercel.app">
+        <img class="icon" src="/icons/moviechronicle.png" alt="" loading="lazy">
+        <strong>영화연대기</strong>
+        <span class="d">1891년부터 지금까지, 연도별로 만나는 영화의 역사</span>
+        <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card" data-cat="game" href="https://alien-dots.vercel.app">
+        <img class="icon" src="/icons/aliendots.png" alt="" loading="lazy">
+        <strong><span class="ko">외계인 닷</span><span class="en">Alien Dots</span></strong>
+        <span class="d"><span class="ko">같은 종족 외계인을 선으로 이어 우주를 침공하는 퍼즐</span><span class="en">Connect aliens of the same kind and take over the galaxy.</span></span>
+        <span class="foot"><span class="state"><span class="ko">출시 준비 중</span><span class="en">Coming to Google Play</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card" data-cat="game" href="https://arrows-time.vercel.app">
+        <img class="icon" src="/icons/arrowmelody.png" alt="" loading="lazy">
+        <strong><span class="ko">Arrow Melody</span><span class="en">Arrow Melody</span></strong>
+        <span class="d"><span class="ko">화살표를 빼낼 때마다 숨은 선율이 한 음씩 울려요</span><span class="en">Clear the arrows and each move plays the next note of a hidden melody.</span></span>
+        <span class="foot"><span class="state"><span class="ko">웹 공개</span><span class="en">Web</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card" data-cat="game" href="https://ocean-garden.vercel.app">
+        <img class="icon" src="/icons/oceangarden.png" alt="" loading="lazy">
+        <strong><span class="ko">오션가든</span><span class="en">Ocean Sort</span></strong>
+        <span class="d"><span class="ko">물방울 속 바다생물을 같은 종류끼리 모으는 퍼즐</span><span class="en">Sort sea creatures floating in water drops into matching tubes.</span></span>
+        <span class="foot"><span class="state"><span class="ko">웹 공개</span><span class="en">Web</span></span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="game" href="https://bomb-pass-six.vercel.app">
+        <img class="icon" src="/icons/bombpass.png" alt="" loading="lazy">
+        <strong>두근두근 폭탄</strong>
+        <span class="d">폰 하나로 돌려가며 즐기는 두근두근 파티 게임 모음</span>
+        <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+    </div>
+    <p class="pv"><span class="ko">개인정보처리방침</span><span class="en">Privacy policies</span>: <a href="/privacy/aliendots.html"><span class="ko">외계인 닷</span><span class="en">Alien Dots</span></a> · <a href="/privacy/arrowmelody.html">Arrow Melody</a> · <a href="/privacy/oceangarden.html"><span class="ko">오션가든</span><span class="en">Ocean Sort</span></a></p>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="sec"><span class="ko">소개</span><span class="en">About</span></h2>
+    <div>
+      <p class="ko">에디슨은 거창한 연구실이 아니라, 오늘 누군가의 손바닥 위에서 태어날지도 모릅니다.</p>
+      <p class="ko">아이디어믹스랩은 사람들이 더 자주 엉뚱한 상상을 하고, 그 상상을 두려워하지 않는 세상을 꿈꿉니다. 우리가 만든 작은 앱 하나가 누군가에게 “나도 해볼 수 있겠다”는 용기가 되기를 바랍니다.</p>
+      <p class="en">An Edison may not be born in a grand laboratory, but in the palm of someone's hand, today.</p>
+      <p class="en">IdeaFusionLab dreams of a world where people imagine boldly and are never afraid of their wildest ideas. We hope every small app we make gives someone the courage to say, “I can do this too.”</p>
+    </div>
+  </section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <p><span class="ko">앱에 대한 문의나 제안은 언제든 이메일로 보내 주세요.</span><span class="en">Questions or feedback? We'd love to hear from you.</span></p>
+  <dl>
+    <dt><span class="ko">상호</span><span class="en">Company</span></dt><dd><span class="ko">아이디어믹스랩 (IDEAMIXLAB)</span><span class="en">IDEAMIXLAB</span></dd>
+    <dt><span class="ko">대표</span><span class="en">Representative</span></dt><dd><span class="ko">박내연</span><span class="en">PARK NAEYEON</span></dd>
+    <dt><span class="ko">이메일</span><span class="en">Email</span></dt><dd><a href="mailto:pny9009@hanmail.net">pny9009@hanmail.net</a></dd>
+  </dl>
+  <p style="margin-top:20px"><span class="ko">© 2026 아이디어믹스랩. All rights reserved.</span><span class="en">© 2026 IDEAMIXLAB. All rights reserved.</span></p>
+</div></footer>
+<script>
+(function(){
+  var KEY='iml-lang';
+  function set(l){document.documentElement.lang=l;document.documentElement.dataset.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
+    try{localStorage.setItem(KEY,l)}catch(e){}}
+  var saved=null;try{saved=localStorage.getItem(KEY)}catch(e){}
+  var nav=(navigator.language||'ko').toLowerCase();
+  set(saved||(nav.indexOf('ko')===0?'ko':'en'));
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.l)})});
+})();
+</script>
+<script>
+(function(){var bs=document.querySelectorAll('.tabs button'),cs=document.querySelectorAll('.card');
+bs.forEach(function(b){b.addEventListener('click',function(){var f=b.dataset.f;
+bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+cs.forEach(function(c){c.hidden=!(f==='all'||c.dataset.cat===f)});});});})();
+</script>
+</body>
+</html>

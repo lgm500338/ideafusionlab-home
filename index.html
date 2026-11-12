@@ -98,9 +98,12 @@ footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12
 .lang button[aria-pressed="true"]{background:#1C1F2A;color:#fff;font-weight:700}
 .lang button:focus-visible{outline:3px solid #3B6CF6;outline-offset:2px}
 @media (max-width:800px){
-  .combo .row{flex-wrap:nowrap;gap:6px} .chip{padding:8px 12px;font-size:15px} .plus{font-size:16px} .result{font-size:16px;padding:8px 16px}
-  .hero{grid-template-columns:1fr;padding:0 0 36px;gap:16px} .hero svg{order:-1;max-width:260px}
-  .feature{grid-template-columns:1fr;padding:28px 20px;border-radius:18px;gap:22px} .feature p{font-size:15px}
+  .combo .row{flex-wrap:nowrap;gap:6px} .chip{padding:6px 10px;font-size:13.5px;border-radius:10px} .plus{font-size:14px} .result{font-size:14px;padding:6px 14px}
+  .hero{grid-template-columns:1fr;padding:0 0 24px;gap:8px} .hero svg{order:-1;max-width:150px}
+  .hero h1{font-size:30px} .hero p{font-size:14.5px;margin-top:8px}
+  .feature{grid-template-columns:1fr;padding:20px 18px;border-radius:16px;gap:14px} .feature .kicker{font-size:13px} .feature h2{font-size:22px;margin:2px 0 6px} .feature p{font-size:13.5px;line-height:1.6}
+  .feature .cta{margin-top:10px} .combo{gap:6px} .arrow{font-size:16px}
+  section.list{padding-top:36px} h2.sec{font-size:26px} .lead{margin-bottom:20px}
   .about{grid-template-columns:1fr;gap:12px}
   .app{grid-template-columns:56px 1fr;gap:16px} .icon{width:56px;height:56px;border-radius:14px}
   .links{grid-column:2;flex-direction:row;flex-wrap:wrap;align-items:center;gap:14px}
@@ -209,6 +212,12 @@ footer dl{display:grid;grid-template-columns:auto 1fr;gap:4px 20px;margin-top:12
         <img class="icon" src="/icons/sokpuri.png" alt="" loading="lazy">
         <strong>속풀이 해방구</strong>
         <span class="d">익명 인형을 때리고, 쌓인 감정은 흔적 없이 태우거나 파쇄해요</span>
+        <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
+      </a>
+      <a class="card ko" data-cat="life" href="https://memory-tracing.vercel.app">
+        <img class="icon" src="/icons/memorytracing.webp" alt="" loading="lazy">
+        <strong>기억더듬기</strong>
+        <span class="d">그해 그날의 뉴스를 실마리 삼아, 기억나는 순간을 하나씩 적어 내 인생 타임라인을 만들어요</span>
         <span class="foot"><span class="state">웹 공개</span><span class="play"><span class="ko">바로 해보기</span><span class="en">Play now</span> →</span></span>
       </a>
       <a class="card ko" data-cat="learn" href="https://solar-system-explorer-wheat.vercel.app">
